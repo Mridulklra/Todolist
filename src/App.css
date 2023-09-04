@@ -1,0 +1,93 @@
+/* Center the todo list card in the middle of the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5; /* Background color for the entire page */
+}
+
+/* Apply styles to the todo list card */
+.todo-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style the image */
+.todo-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Style the "Add Items" input and button */
+.addItems {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.addItems input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.addItems i.fa-plus {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.addItems i.fa-plus:hover {
+  background-color: #0056b3;
+}
+
+/* Style the list items */
+.showitems .eachItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.eachItem h3 {
+  margin: 0;
+}
+
+.eachItem i.add-btn {
+  color: red;
+  cursor: pointer;
+}
+
+/* Style the "CHECK LIST" button */
+.showitems button.effect {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.showitems button.effect:hover {
+  background-color: #0056b3;
+}
